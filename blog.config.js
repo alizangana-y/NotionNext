@@ -98,4 +98,9 @@ CONTACT_YOUTUBE: process.env.NEXT_PUBLIC_CONTACT_YOUTUBE || '', // Youtube主页
   UUID_REDIRECT: process.env.UUID_REDIRECT || false
 }
 
+POSTS_SORT_BY: 'notion', // 排序方式 'date'按时间,'notion'由notion控制
+POST_LIST_STYLE: 'scroll', // ['page','scroll] 文章列表样式:页码分页、单页滚动加载
+POST_LIST_PREVIEW: process.env.NEXT_PUBLIC_POST_PREVIEW || 'true', //  是否在列表加载文章预览
+POSTS_PER_PAGE: 12, // post counts per page
+
 module.exports = BLOG
